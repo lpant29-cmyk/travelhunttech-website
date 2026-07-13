@@ -1,0 +1,114 @@
+:root {
+  --navy: #0b2545;
+  --teal: #13856b;
+  --light-bg: #f6f8fa;
+  --text: #2a2f35;
+  --muted: #5b6773;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: var(--text);
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  background: var(--navy);
+  color: #fff;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a {
+  color: #dfe7f0;
+  text-decoration: none;
+  margin-left: 28px;
+  font-size: 0.95rem;
+}
+
+nav a:hover { color: #ffffff; text-decoration: underline; }
+
+.hero {
+  background: linear-gradient(135deg, var(--navy), var(--teal));
+  color: #fff;
+  padding: 90px 40px;
+  text-align: center;
+}
+
+.hero h1 { font-size: 2.4rem; margin-bottom: 10px; }
+.hero p { font-size: 1.15rem; color: #eaf1f7; max-width: 640px; margin: 0 auto; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+h2 {
+  color: var(--navy);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.card {
+  background: var(--light-bg);
+  border-radius: 8px;
+  padding: 28px;
+  border-left: 4px solid var(--teal);
+}
+
+.card h3 { color: var(--navy); margin-top: 0; }
+.card p { color: var(--muted); font-size: 0.95rem; }
+
+.cta {
+  display: inline-block;
+  background: var(--teal);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 24px;
+  font-weight: 600;
+}
+
+.cta:hover { background: #0f6b56; }
+
+footer {
+  background: var(--navy);
+  color: #cfd9e3;
+  text-align: center;
+  padding: 26px 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+footer a { color: #9fd6c4; text-decoration: none; }
+
+.contact-info {
+  background: var(--light-bg);
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.contact-info p { margin: 8px 0; }
